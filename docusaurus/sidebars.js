@@ -36,6 +36,16 @@ module.exports = {
       label: 'Guides',
       items: [
         'guides/index',
+        {
+          type: 'category',
+          label: 'Getting Started on CloudWatch',
+          items: [
+            'guides/getting-started/setup-monitoring-source-accounts',
+            'guides/getting-started/setup-unified-data-store',
+            'guides/getting-started/configure-agents-collectors',
+            'guides/getting-started/dashboards-alerts',
+          ],
+        },
         'guides/choosing-a-tracing-agent',
         {
           type: 'category',
@@ -69,7 +79,7 @@ module.exports = {
           items: [
             {
               type: 'category',
-              label: 'AWS Native',
+              label: 'ECS AWS Native',
               items: [
                 'guides/containers/aws-native/ecs/best-practices-metrics-collection-1',
                 'guides/containers/aws-native/ecs/best-practices-metrics-collection-2',
@@ -77,7 +87,7 @@ module.exports = {
             },
             {
               type: 'category',
-              label: 'Open Source',
+              label: 'ECS Open Source',
               items: [
                 'guides/containers/oss/ecs/best-practices-metrics-collection-1',
                 'guides/containers/oss/ecs/best-practices-metrics-collection-2',
@@ -91,7 +101,7 @@ module.exports = {
           items: [
             {
               type: 'category',
-              label: 'AWS Native',
+              label: 'EKS AWS Native',
               items: [
                 'guides/containers/aws-native/eks/amazon-cloudwatch-container-insights',
                 'guides/containers/aws-native/eks/log-aggregation',
@@ -101,7 +111,7 @@ module.exports = {
             },
             {
               type: 'category',
-              label: 'Open Source',
+              label: 'EKS Open Source',
               items: ['guides/containers/oss/eks/best-practices-metrics-collection',
                 'guides/containers/oss/eks/keda-amp-eks',
               ],
@@ -115,7 +125,7 @@ module.exports = {
           items: [
             {
               type: 'category',
-              label: 'AWS Native',
+              label: '.NET AWS Native',
               items: [
                 'guides/dotnet/aws-native/logs',
                 'guides/dotnet/aws-native/metrics',
@@ -124,7 +134,7 @@ module.exports = {
             },
             {
               type: 'category',
-              label: 'Open Source',
+              label: '.NET Open Source',
               items: [
                 'guides/dotnet/oss/logs',
                 'guides/dotnet/oss/metrics',
@@ -186,30 +196,6 @@ module.exports = {
           label: 'Partners',
           items: [
             'guides/partners/databricks',
-            {
-              type: 'category',
-              label: 'Databases',
-              items: ['guides/databases/rds-and-aurora'],
-            },
-            {
-              type: 'category',
-              label: 'Cost',
-              items: [
-                'guides/cost/kubecost',
-                'guides/cost/OLA-EC2-righsizing',
-                {
-                  type: 'category',
-                  label: 'Visualizing costs',
-                  items: [
-                    'guides/cost/cost-visualization/cost',
-                    'guides/cost/cost-visualization/amazon-cloudwatch',
-                    'guides/cost/cost-visualization/amazon-grafana',
-                    'guides/cost/cost-visualization/amazon-prometheus',
-                    'guides/cost/cost-visualization/aws-xray',
-                  ],
-                },
-              ],
-            },
           ],
         },
         'guides/observability-maturity-model',
@@ -244,6 +230,11 @@ module.exports = {
             'tools/logs/index',
             'tools/logs/logs-insights-examples',
             'tools/logs/contributor_insights/contributor_insights',
+            {
+              type: 'category',
+              label: 'Security',
+              items: ['tools/logs/security/cloudwatch-logs-security-best-practices'],
+            },
             {
               type: 'category',
               label: 'Data Protection',
